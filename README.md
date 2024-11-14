@@ -25,7 +25,7 @@ You can check the live demo of the project [here](https://rabumaabraham.github.i
 
 - HTML
 - CSS
-- JavaScript (Handles question logic, user interactions, and score tracking)
+- JavaScript: Logic for quiz functionality, including question handling, score tracking, and feedback.
 
 ## Installation
 
