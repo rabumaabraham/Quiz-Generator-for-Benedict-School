@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Generator</h1>
+
+    <!-- Teacher's Input Section -->
+    <section id="teacher-section">
+      <h2>Enter a Question</h2>
+      <form id="question-form">
+        <input type="text" id="question" placeholder="Enter question" required>
+        <input type="text" class="option" placeholder="Option A" required>
+        <input type="text" class="option" placeholder="Option B" required>
+        <input type="text" class="option" placeholder="Option C" required>
+        <input type="text" class="option" placeholder="Option D" required>
+        <label for="correct-answer">Correct Answer:</label>
+        <select id="correct-answer">
+          <option value="0">Option A</option>
+          <option value="1">Option B</option>
+          <option value="2">Option C</option>
+          <option value="3">Option D</option>
+        </select>
+        <button type="submit">Add Question</button>
+      </form>
+      <div id="duplicate-warning" class="warning" style="display: none;">Options must be unique. Please check your inputs.</div>
+      <div id="question-count" class="hint">Total Questions: 0</div>
+      <!-- Start Quiz Button -->
+      <button id="start-quiz" style="display: none;">Start Quiz</button>
+    </section>
+
+    <!-- Student's Quiz Section -->
+    <section id="quiz-section" style="display: none;">
+      <h2 id="quiz-title" style="display: none;">Quiz Time!</h2> <!-- Initially hidden -->
+      <div id="quiz-display">
+        <p id="question-display"></p>
+        <div id="options-display"></div>
+      </div>
+      <p id="feedback"></p>
+      <button id="next-question" style="display: none;">Next Question</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
